@@ -1,0 +1,143 @@
+<nav>
+						<ul id="nav">
+							<li><a href="index.php?page=index">Pocetna</a></li>
+							<li id="dropdown"><a href="">Drop Down</a>
+								<ul>
+									<li><a href="">Category</a></li>
+								</ul>
+							</li>
+							<li><a href="">Autor</a></li>
+
+							<?php if(isset($_SESSION['korisnik'])):?>
+							<li><a href="index.php?page=kontakt">Kontakt</a></li>
+							<li><a href="views/logout.php">Izloguj se</a></li>
+<?php else:?>
+                            <li><a href="index.php?page=registracija">Registracija</a></li>
+							<?php endif;?>
+                        </ul>
+					</nav>
+
+
+
+					<div class="clearfix single_content">
+							<div class="clearfix post_date floatleft">
+								<div class="date">
+									<h3>27</h3>
+									<p>January</p>
+								</div>
+							</div>
+							<div class="clearfix post_detail">
+								<h2><a href="">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </a></h2>
+								<div class="clearfix post-meta">
+									<p><span><i class="fa fa-user"></i> Admin</span> <span><i class="fa fa-clock-o"></i> 20 Jan 2014</span> <span><i class="fa fa-comment"></i> 4 comments</span> <span><i class="fa fa-folder"></i> Category</span></p>
+								</div>
+								<div class="clearfix post_excerpt">
+									<img src="images/thumb.png" alt=""/>
+									<p>prvi </p>
+								</div>
+								<a href="index.php?page=singlePost">Procitaj vise</a>
+							</div>
+						</div>
+
+
+						SELECT k.*,COUNT(idKategorija) as br FROM post p INNER JOIN kategorije k on p.idKategorija=k.id WHERE idKategorija=3
+
+slajder
+						<li><img src="images/thumbs/megamind_07.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars" data-large-src="images/slides/megamind_07.jpg"/></li>
+
+							<li><img src="images/thumbs/wall-e.jpg" alt="Montréal, QC, Canada" data-large-src="images/slides/wall-e.jpg" data-description="Eiffel Tower and Champ de Mars"/></li>
+							
+							<li>
+								<img src="images/thumbs/up-official-trailer-fake.jpg" alt="Shanghai, China" data-large-src="images/slides/up-official-trailer-fake.jpg" data-description="Shanghai ,chaina">
+							</li>
+
+
+
+
+
+
+
+							SELECT * FROM anketa_odgovori ao INNER JOIN anketa a ON ao.idAnketa=a.id_a INNER JOIN anketa_korisnik_odgovor ako on ao.idAnketa=ako.idOdgovor INNER JOIN korisnik k on ako.idK=k.idKorisnik 
+							
+
+
+
+
+
+
+
+
+
+
+
+								<li><a href="index.php?page=index">Pocetna</a></li>
+							<li id="dropdown"><a href="">Drop Down</a>
+								<ul>
+									<li><a href="">Category</a></li>
+								</ul>
+							</li>
+							
+
+							<?php if(isset($_SESSION['korisnik'])):?>
+							<li><a href="index.php?page=kontakt">Kontakt</a></li>
+							<li><a href="index.php?page=postaviPost">Postavi objavu</a></li>
+							<li><a href="views/logout.php">Izloguj se</a></li>
+<?php else:?>
+                            <li><a href="index.php?page=registracija">Registracija</a></li>
+							<?php endif;?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							  sadrzaj +='<div class="clearfix single_content">'
+							+'<div class="clearfix post_date floatleft">'
+								+'<div class="date">'
+                                + '<h3>'+data[i].v1+'</h3>'
+                                + '<p>'+data[i].v2+'</p>'
+								+'</div>'
+							+'</div>'
+							+'<div id="post_detail" class="clearfix post_detail">'
+								+'<div class="clearfix post-meta">'
+									+'<p><span><i class="fa fa-user"></i>'+data[i].ime +' '+ data[i].prezime+'</span>'
+									+'<span><i class="fa fa-clock-o"></i>'+data[i].vreme+'</span>'
+									+'<a class="floatright brKom" href="#more_works" data-id="">Obrisi</a>'
+									+'</p>'
+									
+								+'</div>'
+								+'<div class="clearfix post_excerpt">'
+									+'<p>'+data[i].sadrzaj+'</p>'
+								+'</div>'
+							+'</div>'
+                        +'</div>'
+
+
+						<div class="clearfix single_content">
+							<div class="clearfix post_date floatleft">
+								<div class="date">
+                                <h3></h3>
+                                <p></p>
+								</div>
+							</div>
+							<div id="post_detail" class="clearfix post_detail">
+								<div class="clearfix post-meta">
+									<p><span><i class="fa fa-user"></i></span>
+									<span><i class="fa fa-clock-o"></i></span>
+									
+									</p>
+									
+								</div>
+								<div class="clearfix post_excerpt">
+									<p></p>
+								</div>
+							</div>
+                        </div>
